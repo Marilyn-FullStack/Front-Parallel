@@ -17,12 +17,12 @@ function Footer() {
                             <a href="https://brazil.generation.org/politica-de-privacidade/" className="hover:underline me-4 md:me-6" target="_blank">Política de Privacidade</a>
                         </li>
                         <li >
-                            <Link to='/contato' className=" hover:underline mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                            <Link to='/developers' className=" hover:underline mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                                 Time de Desenvolvimento
                             </Link>
                         </li>
                         <li>
-                            <Link to='/contatomensagem' className="pl-5 hover:underline mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                            <Link to='/contato' className="pl-5 hover:underline mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                                 Contato
                             </Link>
                         </li>

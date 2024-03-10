@@ -1,4 +1,5 @@
 import { toast } from 'react-toastify';
+import '../App.css'
 
 export function ToastAlerta(message: string, type: string) {
     switch (type) {
@@ -11,7 +12,7 @@ export function ToastAlerta(message: string, type: string) {
                 pauseOnHover: false,
                 draggable: false,
                 style: {
-                    background: '#687259',
+                    background: '#226384',
                     color: 'white'
                 }
             });
@@ -27,6 +28,7 @@ export function ToastAlerta(message: string, type: string) {
                 draggable: false,
                 style: {
                     background: '#8f8681',
+                    color: 'white'
                 }
             });
             break;

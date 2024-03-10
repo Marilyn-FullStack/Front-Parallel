@@ -7,6 +7,8 @@ import NavBar from './components/navbar/NavBar'
 import Cadastro from './pages/cadastro/Cadastro'
 import Perfil from './pages/perfil/Perfil'
 import Footer from './components/footer/Footer'
+import Developers from './pages/contato/Developers'
+import Contato from './pages/contato/Contato'
 
 function App() {
 
@@ -22,6 +24,8 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/cadastro" element={<Cadastro />} />
               <Route path="/perfil" element={<Perfil />} />
+              <Route path="/developers" element={<Developers />} />
+              <Route path="/contato" element={<Contato />} />
             </Routes>
           </div>
           <Footer />

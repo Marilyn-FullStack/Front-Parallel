@@ -3,6 +3,7 @@ import { ChangeEvent, useContext, useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import UsuarioLogin from '../../models/UsuarioLogin';
 import { AuthContext } from '../../contexts/AuthContext';
+import '../../App.css'
 
 function Login() {
     const navigate = useNavigate();
