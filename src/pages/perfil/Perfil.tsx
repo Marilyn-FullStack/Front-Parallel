@@ -20,9 +20,9 @@ function Perfil() {
       <Image
         src={usuario.foto}
         alt={`Foto de perfil de ${usuario.nomeUsuario}`}
-        className='rounded-full w-56 mx-auto mt-[-8rem] border-8 border-white relative z-10'
+        className='rounded-full w-56 mx-auto border-8 border-white relative z-10'
       />
-      <VStack spacing={4} mt={-6} bg='sky.500' color='white' fontSize='2xl' p={8} borderRadius='md'>
+      <VStack spacing={4} mt={-6} bg='sky.500' color='#32435f' fontSize='2xl' p={8} borderRadius='md'>
         <Heading as='p'>Nome: {usuario.nomeUsuario}</Heading>
         <Heading as='p'>Email: {usuario.usuario}</Heading>
       </VStack>

@@ -11,7 +11,7 @@ const theme = extendTheme({
     global: {
       body: {
         bg: '#e1dcd9',
-        color: '#a67f78',
+        color: '#421713',
       },
     },
   },

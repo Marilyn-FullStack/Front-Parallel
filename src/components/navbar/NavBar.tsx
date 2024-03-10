@@ -6,17 +6,17 @@ function NavBar() {
     return (
         <Flex padding={6} bg='#e6cebc' fontSize={20}>
             <Link to="/home">
-                <Box p='3'>
+                <Box p='2'>
                     <img src="https://ik.imagekit.io/ghc9vhgb1/logo-01-removebg-preview.png?updatedAt=1710083268954" alt="Logo" width={70} />
                 </Box>
             </Link>
             <Spacer />
-            <Box p='5'>
+            <Box p='4'>
                 <ul className="list-style-none mr-auto flex lg:flex-row" data-te-navbar-nav-ref>
-                    <li className="mb-4 mr-5 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-                        <Link to="/home" className="flex px-4 py-2 items-center justify-center font-semibold rounded-3xl transition-colors duration-300 hover:text-white hover:bg-[#a2a182]" >Página Inicial</Link>
+                    <li className="mb-4 mx-5 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+                        <Link to="/home" className="flex px-4 py-2 items-center justify-center font-semibold rounded-3xl transition-colors duration-300 hover:text-white hover:bg-[#a67f78]" >Página Inicial</Link>
                     </li>
-                    <li className="mb-4 mr-5 lg:mb-0 lg:pr-2 rounded-3xl transition-colors duration-300 hover:text-white hover:bg-[#a2a182]" data-te-nav-item-ref>
+                    <li className="mb-4 mr-5 lg:mb-0 lg:pr-2 rounded-3xl transition-colors duration-300 hover:text-white hover:bg-[#a67f78]" data-te-nav-item-ref>
                         <Menu>
                             {({ isOpen }) => (
                                 <>
@@ -36,10 +36,10 @@ function NavBar() {
                         </Menu>
                     </li>
                     <li className="mb-4 mr-5 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-                        <Link to="/perfil" className="flex px-4 py-2 items-center justify-center font-semibold rounded-3xl transition-colors duration-300 hover:text-white hover:bg-[#a2a182]">Perfil</Link>
+                        <Link to="/perfil" className="flex px-4 py-2 items-center justify-center font-semibold rounded-3xl transition-colors duration-300 hover:text-white hover:bg-[#a67f78]">Perfil</Link>
                     </li>
                     <li className="mb-4 mr-5 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-                        <Link to="/sobre" className="flex px-4 py-2 items-center justify-center font-semibold rounded-3xl transition-colors duration-300 hover:text-white hover:bg-[#a2a182]">Sobre</Link>
+                        <Link to="/sobre" className="flex px-4 py-2 items-center justify-center font-semibold rounded-3xl transition-colors duration-300 hover:text-white hover:bg-[#a67f78]">Sobre</Link>
                     </li>
                 </ul>
             </Box>

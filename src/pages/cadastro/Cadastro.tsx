@@ -1,9 +1,9 @@
 import { Box, Button, Heading, Input, Link as ChakraLink } from '@chakra-ui/react';
 import { ChangeEvent, FormEvent, useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import Usuario from '../models/Usuario';
-import { cadastrarUsuario } from '../services/Service';
-import { ToastAlerta } from '../utils/ToastAlert';
+import Usuario from '../../models/Usuario';
+import { cadastrarUsuario } from '../../services/Service';
+import { ToastAlerta } from '../../utils/ToastAlert';
 
 function Cadastro() {
   const navigate = useNavigate();
@@ -141,10 +141,10 @@ function Cadastro() {
             />
           </div>
 
-          <div className="flex items-center">
-            <span className="text-gray-600">Já possui uma conta? </span>
+          <div className="flex items-center text-[13px]">
+            <span className="text-gray-600">Já tem uma conta?&nbsp;</span>
             <ChakraLink as={Link} to="/login" className="text-blue-500 hover:underline">
-              Login
+              Fazer Login
             </ChakraLink>
           </div>
 
