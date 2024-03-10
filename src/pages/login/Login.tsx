@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import UsuarioLogin from '../../models/UsuarioLogin';
 import { AuthContext } from '../../contexts/AuthContext';
 import '../../App.css'
+import { RotatingLines } from 'react-loader-spinner';
 
 function Login() {
     const navigate = useNavigate();
@@ -36,8 +37,8 @@ function Login() {
         <>
             <Box className="login-box md-10" p={4} display="flex" justifyContent="center" alignItems="center" minHeight="70vh">
                 <VStack spacing={4} align="stretch" maxW="400px" w="100%">
-                <Box borderWidth="2px" borderRadius="md" p={14} pt={8} pb={8}>
-                    <Heading as="h2" size="lg" textAlign="center" marginBottom={6}>Login</Heading>
+                    <Box borderWidth="2px" borderRadius="md" p={14} pt={8} pb={8}>
+                        <Heading as="h2" size="lg" textAlign="center" marginBottom={6}>Login</Heading>
                         <form onSubmit={handleSubmit}>
                             <div className="user-box">
                                 <Input
@@ -81,7 +82,13 @@ function Login() {
                                 _hover={{ bgColor: '#687259' }}
                                 w="100%"
                             >
-                                {isLoading ? 'Carregando...' : 'Entrar'}
+                                {isLoading ? <RotatingLines
+                                    strokeColor="white"
+                                    strokeWidth="5"
+                                    animationDuration="0.75"
+                                    width="24"
+                                    text-aling='center'
+                                    visible={true} /> : 'Entrar'}
                             </Button>
                         </form>
                     </Box>

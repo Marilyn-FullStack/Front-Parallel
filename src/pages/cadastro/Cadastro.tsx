@@ -82,6 +82,7 @@ function Cadastro() {
               value={usuario.nomeUsuario}
               onChange={atualizarEstado}
               className="mt-1"
+              focusBorderColor="#687259"
             />
           </div>
 
@@ -96,6 +97,7 @@ function Cadastro() {
               value={usuario.usuario}
               onChange={atualizarEstado}
               className="mt-1"
+              focusBorderColor="#687259"
             />
           </div>
 
@@ -110,6 +112,7 @@ function Cadastro() {
               value={usuario.foto}
               onChange={atualizarEstado}
               className="mt-1"
+              focusBorderColor="#687259"
             />
           </div>
 
@@ -124,6 +127,7 @@ function Cadastro() {
               value={usuario.senha}
               onChange={atualizarEstado}
               className="mt-1"
+              focusBorderColor="#687259"
             />
           </div>
 
@@ -138,6 +142,7 @@ function Cadastro() {
               value={confirmaSenha}
               onChange={handleConfirmarSenha}
               className="mt-1"
+              focusBorderColor="#687259"
             />
           </div>
 
