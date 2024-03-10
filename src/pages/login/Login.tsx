@@ -33,9 +33,9 @@ function Login() {
 
     return (
         <>
-            <Box className="login-box md-10" p={4} display="flex" justifyContent="center" alignItems="center" minHeight="100vh">
+            <Box className="login-box md-10" p={4} display="flex" justifyContent="center" alignItems="center" minHeight="70vh">
                 <VStack spacing={4} align="stretch" maxW="400px" w="100%">
-                    <Heading as="h2" size="lg" textAlign="center">Login</Heading>
+                    <Heading as="h2" size="lg" textAlign="center" marginBottom={2}>Login</Heading>
                     <Box borderWidth="2px" borderRadius="md" p={14} pt={8} pb={8}>
                         <form onSubmit={handleSubmit}>
                             <div className="user-box">

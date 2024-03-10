@@ -11,7 +11,8 @@ export function ToastAlerta(message: string, type: string) {
                 pauseOnHover: false,
                 draggable: false,
                 style: {
-                    background: '#32435f',
+                    background: '#687259',
+                    color: 'white'
                 }
             });
             break;
@@ -39,7 +40,8 @@ export function ToastAlerta(message: string, type: string) {
                 pauseOnHover: false,
                 draggable: false,
                 style: {
-                    background: '#8e412e',
+                    background: '#ba6f4d',
+                    color: 'white'
                 }
             });
             break;
