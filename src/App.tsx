@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { AuthProvider } from './contexts/AuthContext'
+import Cadastro from './cadastro/Cadastro'
+import Perfil from './pages/perfil/Perfil'
 
 function App() {
 
@@ -14,7 +16,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/login" element={<Login />} />
-
+          <Route path="/cadastro" element={<Cadastro />} />
+          <Route path="/perfil" element={<Perfil />} />
         </Routes>
       </BrowserRouter>
       </AuthProvider>
