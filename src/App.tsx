@@ -1,39 +1,23 @@
-import { Container, Heading, Box } from '@chakra-ui/react'
+import Login from './pages/login/Login'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import { AuthProvider } from './contexts/AuthContext'
 
 function App() {
 
-  const boxStyles = {
-    p: '10px',
-    bg: '#a67f78',
-    color: 'white',
-    m: '15px',
-    textAlign: 'center',
-    borderRadius: '5px',
-  }
-
   return (
     <>
-      <Container
-        textAlign="center"
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        justifyContent="center"
-        h="100vh"
-      >
-        <Heading>Teste de biblioteca: Chakra-ui!</Heading>
+    <AuthProvider>
+      <ToastContainer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
 
-
-        <Box sx={boxStyles}>
-          <a
-            href="https://github.com/camilacno/chakra-ui-tutorial"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Acesse o repositório
-          </a>
-        </Box>
-      </Container>
+        </Routes>
+      </BrowserRouter>
+      </AuthProvider>
     </>
   )
 }
