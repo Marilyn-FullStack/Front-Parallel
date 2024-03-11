@@ -44,7 +44,7 @@ function App() {
       </AuthProvider>
       </CartProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
